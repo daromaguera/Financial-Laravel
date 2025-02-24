@@ -1,0 +1,38 @@
+Installed dependencies:
+
+- 
+
+
+
+Requirements, versions and dependencies:
+    PHP Version: 8.1.25
+    XAMPP Version: 3.3.0
+    MySQL DB Backup Name: fpph.sql
+    Github Repo named ‘staging’ @ https://github.com/financeph/financialplanph-back.git 
+    Repo web link: https://github.com/financeph/financialplanph-back/tree/staging 
+
+Other dependencies:
+    - composer require guzzlehttp/guzzle
+    - composer require jenssegers/agent
+    - composer require fakerphp/faker
+
+Installation Guide: 
+    Install XAMPP
+    Run XAMPP Control Panel with MySQL and Apache
+    Clone the Repo on the selected/ideal directory of your local machine
+    Go to the directory where you clone the repo using Command Line Interface of your local machine and run by typing the ff (Command is based on Windows):
+        php artisan db:seed  --class=AgentsTableSeeder
+        To generate initial list of Agents in the DB (for testing)
+        php artisan db:seed  --class=ClientsTableSeeder
+        To generate initial list of Clients in the DB (for testing)
+        php artisan db:seed  --class=CashFlowListSeeder
+        To generate initial list of Cash Flow List in the DB
+        php artisan db:seed  --class=DebtsAndFinalListSeed
+        To generate initial list of Debts and Final List in the DB
+        php artisan db:seed  --class=LifeInsuranceCovListSeed
+        To generate initial list of Life Insurance Coverage in the DB
+        php artisan db:seed  --class=EducationExpenseListSeed
+        To generate initial list of Education Planning Expenses in the DB
+        php artisan serve
+        To run your program
+        …
